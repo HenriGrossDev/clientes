@@ -52,6 +52,6 @@ public class ClienteController {
                       return repository.save(clienteAtualizado);
 
                   })
-                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Cliente não encontrado"));
+                  .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Cliente não encontrado"));
     }
 }
